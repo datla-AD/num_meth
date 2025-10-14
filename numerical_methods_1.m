@@ -1,4 +1,4 @@
-% ----- Octave: lsqcurvefit from the optim package -----
+
 pkg load optim;                   % make sure the package is installed/loaded
 
 x = linspace(0, 5, 60)'; rand("seed", 1);
@@ -23,4 +23,5 @@ yy = model(p_hat, xx);
 plot(x, y, 'o', xx, yy, '-', 'LineWidth', 2);
 grid on; xlabel('x'); ylabel('y'); legend('data','fit');
 title('Octave optim: lsqcurvefit');
+
 
